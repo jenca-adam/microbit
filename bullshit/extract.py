@@ -32,7 +32,7 @@ class Example(Frame):
         
         canvas.create_line(*data,width=3)
         canvas.pack(fill=BOTH, expand=1)
-        self.master.bind('<Configure>',main)
+        self.master.bind('<Key>',lambda foo:eval('self=Example(self.root)'))
 
 
 def main(foo=None):
