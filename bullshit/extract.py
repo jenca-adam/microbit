@@ -19,6 +19,8 @@ class Example(Frame):
                 if line=='\n':
                     continue
                 temp,time=tuple(line.split(';'))
+                if not temp:
+                    continue
                 data.append(c)
 
                 data.append((h-int(temp)*2)-h//2)
