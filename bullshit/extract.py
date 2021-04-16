@@ -29,7 +29,7 @@ class Example(Frame):
                 c+=10
         print(*data)
         if len(data)>190:
-        data=data[:-190]
+            data=data[:-190]
         canvas.create_line(*data,width=3)
         canvas.pack(fill=BOTH, expand=1)
 
