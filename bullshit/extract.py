@@ -27,7 +27,7 @@ def main():
 
     root = Tk()
     ex = Example()
-    root.geometry("400x250+300+300")
+    root.geometry("1920x1005")
     root.mainloop()
 
 
