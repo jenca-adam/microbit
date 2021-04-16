@@ -12,6 +12,7 @@ class Example(Frame):
         self.initUI()
     def _reset(self,foo=None):
         self.canvas.destroy()
+        del self.canvas
         self.initUI()
     def initUI(self,foo=None):
         print(foo)
@@ -35,7 +36,6 @@ class Example(Frame):
         
         self.canvas.create_line(*data,width=3)
         self.canvas.pack(fill=BOTH, expand=1)
-        self.master.bind('<Configure>',self._reset)
 
 
 def main(foo=None):
