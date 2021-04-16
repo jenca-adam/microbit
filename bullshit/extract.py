@@ -8,7 +8,7 @@ class Example(Frame):
         super().__init__()
         self.root=root
         self.initUI()
-    def _reset(self):
+    def _reset(self,foo=None):
         self=Example()
     def initUI(self,foo=None):
         print(foo)
