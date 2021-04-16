@@ -21,7 +21,7 @@ class Example(Frame):
             for line in f:
                 temp,time=tuple(line.split(';'))
                 data.append(int(temp))
-                data.append(round(int(time.strip())-600000))
+                data.append(round(float(time.strip())-600000))
         canvas.create_line(*data)
         canvas.pack(fill=BOTH, expand=1)
 
