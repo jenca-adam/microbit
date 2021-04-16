@@ -28,7 +28,7 @@ class Example(Frame):
                 data.append(1005-int(temp))
                 c+=10
         print(*data)
-        canvas.create_line(*data)
+        canvas.create_line(*data,width=2)
         canvas.pack(fill=BOTH, expand=1)
 
 
