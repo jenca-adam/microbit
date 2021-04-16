@@ -24,6 +24,7 @@ class Example(Frame):
                 temp,time=tuple(line.split(';'))
                 data.append(int(temp))
                 data.append(round(float(time.strip())-600000))
+        print(*data)
         canvas.create_line(*data)
         canvas.pack(fill=BOTH, expand=1)
 
