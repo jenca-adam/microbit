@@ -8,7 +8,6 @@ class Example(Frame):
         super().__init__()
         self.root=root
         self.initUI()
-
     def initUI(self,foo=None):
         print(foo)
         self.master.title("Lines")
@@ -31,7 +30,7 @@ class Example(Frame):
         
         canvas.create_line(*data,width=3)
         canvas.pack(fill=BOTH, expand=1)
-        self.master.bind('<Configure>',lambda foo:eval('self=Example()'))
+        self.master.bind('<Configure>',self.initUI)
 
 
 def main():
