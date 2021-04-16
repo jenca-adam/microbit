@@ -23,7 +23,7 @@ class Example(Frame):
                 temp,time=tuple(line.split(';'))
                 data.append(c)
 
-                data.append(canvas.winfo_height()-int(temp)*round(canvas.winfo_(height)/(1920/5)))
+                data.append(canvas.winfo_height()-int(temp)*round(canvas.winfo_height()/(1920/5)))
                 c+=10
         print(*data)
         if len(data)>(canvas.winfo_width()//100)*10:
