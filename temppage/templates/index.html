@@ -5,8 +5,8 @@ Graf Teploty!!
 </title>
 <script>
 var c = document.getElementById("myCanvas");
-c.style.width=window.innerWidth;
-c.style.height=window.innerHeight;
+c.setAttribute('width',window.innerWidth);
+c.setAttribute('height',window.innerHeight)
 </script>
 </head>
 <body>
@@ -15,8 +15,6 @@ Your browser does not support the HTML canvas tag.</canvas>
 
 <script>
 var c = document.getElementById("myCanvas");
-c.style.width=window.innerWidth;
-c.style.height=window.innerHeight;
 
 var ctx = c.getContext("2d");
 ctx.moveTo(0,0);
