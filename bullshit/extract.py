@@ -23,7 +23,7 @@ class Example(Frame):
                     continue
                 data.append(c)
 
-                data.append((h-int(temp)*2)-h//2)
+                data.append((h-int(temp))-h//2)
                 c+=1
         
         
