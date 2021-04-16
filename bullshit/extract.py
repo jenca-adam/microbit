@@ -28,8 +28,8 @@ class Example(Frame):
                     continue
                 data.append(c)
 
-                data.append((h-int(temp))-h//2)
-                c+=0.5
+                data.append((h-int(temp)*5)-h//2)
+                c+=1
         
         
         self.canvas.create_line(*data,width=3)
