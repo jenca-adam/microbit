@@ -37,7 +37,6 @@ def main():
     root = Tk()
     ex = Example()
     root.geometry("1920x1005")
-    root.after(1000,ex.initUI)
     root.mainloop()
 
 
