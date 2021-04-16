@@ -23,7 +23,7 @@ class Example(Frame):
                 temp,time=tuple(line.split(';'))
                 data.append(c)
 
-                data.append(1005-int(temp)*10)
+                data.append(1005-int(temp)*5)
                 c+=10
         print(*data)
         if len(data)>190:
