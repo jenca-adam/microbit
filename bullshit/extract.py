@@ -28,7 +28,6 @@ class Example(Frame):
         
         
         canvas.create_line(*data,width=3)
-        self.master.bind('<Key>',self.initUI)
         canvas.pack(fill=BOTH, expand=1)
 
 
