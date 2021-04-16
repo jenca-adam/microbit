@@ -35,7 +35,7 @@ class Microbit:
     def read(self):
         return self._ser.read()
     def readline(self):
-        return sel._ser.readline()
+        return self._ser.readline()
     def write(self,what):
         return self._ser.write(what)
     def writelines(self,lines):
