@@ -10,7 +10,7 @@ class Example(Frame):
         self.initUI()
     def _reset(self,foo=None):
         del self.canvas
-        self.initUI(foo.height if foo is not None else 1005)
+        self.__init__(self.root)
     def initUI(self,foo=None,h=None):
         if h is None:
             h=self.winfo_screenheight()
