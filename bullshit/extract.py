@@ -12,7 +12,10 @@ class Example(Frame):
         self.initUI()
     def _reset(self,foo=None):
         self.root.destroy()
-        self=Example(self.root,foo.width,foo.height)
+        r= Tk()
+        r.geometry(f"{foo.width}x{foo.height}")
+
+        self=Example(r,foo.width,foo.height)
     def initUI(self,foo=None):
         print(foo)
         self.master.title("Lines")
