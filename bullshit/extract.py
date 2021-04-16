@@ -6,8 +6,6 @@ class Example(Frame):
 
     def __init__(self):
         super().__init__()
-        while True:
-            self.initUI()
 
 
     def initUI(self):
