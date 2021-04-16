@@ -12,8 +12,9 @@ class Example(Frame):
         print(foo)
         self.master.title("Lines")
         self.pack(fill=BOTH, expand=1)
-        print(canvas.winfo_height())
         canvas = Canvas(self)
+        print(canvas.winfo_height())
+
         data=[]
         c=0
         with open('data.txt') as f :
