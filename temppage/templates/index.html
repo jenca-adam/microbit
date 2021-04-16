@@ -14,6 +14,9 @@ c.setAttribute('height',window.innerHeight)
 </canvas>
 
 <script>
+var c = document.getElementById("canvas");
+c.setAttribute('width',window.innerWidth);
+c.setAttribute('height',window.innerHeight);
 
 var ctx = c.getContext("2d");
 ctx.moveTo(0,0);
