@@ -23,13 +23,14 @@ class Example(Frame):
                 temp,time=tuple(line.split(';'))
                 data.append(c)
 
-                data.append(1005-int(temp)*5)
+                data.append(canvas.winfo_height()-int(temp)*round(canvas.winfo_(height)/(1920/5)))
                 c+=10
         print(*data)
-        if len(data)>190:
-            data=data[:-190]
+        if len(data)>(canvas.winfo_width()//100)*10:
+            data=data[:-(canvas.winfo_width()//100)*10]
         canvas.create_line(*data,width=3)
-        canvas.bind('r',self.initUI)
+        self.master.bind('<Key>',self.initUI)
+        self.master.bind("<Configure>", self.initUI)
         canvas.pack(fill=BOTH, expand=1)
 
 
