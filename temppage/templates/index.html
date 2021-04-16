@@ -12,7 +12,8 @@ Your browser does not support the HTML canvas tag.</canvas>
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
 ctx.moveTo(0,0);
-
+{% for i in data%}
+{%endfor%}
 </script>
 </body>
 </html>
