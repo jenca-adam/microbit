@@ -34,7 +34,7 @@ class Example(Frame):
         
         self.canvas.create_line(*data,width=3)
         self.canvas.pack(fill=BOTH, expand=1)
-        self.canvas.bind('<Configure>',self._reset)
+        self.canvas.bind('<t>',self._reset)
 
 def main(foo=None):
 
