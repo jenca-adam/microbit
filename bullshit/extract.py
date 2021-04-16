@@ -20,8 +20,8 @@ class Example(Frame):
         with open('data.txt') as f :
             for line in f:
                 temp,time=tuple(line.split(';'))
-                data.append(temp)
-                data.append(round(time-600000))
+                data.append(int(temp))
+                data.append(round(int(time)-600000))
         canvas.create_line(*data)
         canvas.pack(fill=BOTH, expand=1)
 
