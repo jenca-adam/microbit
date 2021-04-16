@@ -21,7 +21,7 @@ class Example(Frame):
                 temp,time=tuple(line.split(';'))
                 data.append(c)
 
-                data.append((h-int(temp)*1.5)-h//2)
+                data.append((h-int(temp)*2)-h//2)
                 c+=1
         
         
