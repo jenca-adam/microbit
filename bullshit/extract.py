@@ -6,8 +6,8 @@ class Example(Frame):
 
     def __init__(self):
         super().__init__()
-
-        self.initUI()
+        while True:
+            self.initUI()
 
 
     def initUI(self):
@@ -28,6 +28,8 @@ class Example(Frame):
                 data.append(1005-int(temp))
                 c+=10
         print(*data)
+        if len(data)>100
+        data=data[:-100]
         canvas.create_line(*data,width=3)
         canvas.pack(fill=BOTH, expand=1)
 
