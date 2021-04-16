@@ -17,13 +17,15 @@ class Example(Frame):
 
         canvas = Canvas(self)
         data=[]
+        c=0
         with open('data.txt') as f :
             for line in f:
                 if line=='\n':
                     continue
                 temp,time=tuple(line.split(';'))
                 data.append(int(temp))
-                data.append(round(float(time.strip())%100)*5)
+                data.append(c)
+                c+=10
         print(*data)
         canvas.create_line(*data)
         canvas.pack(fill=BOTH, expand=1)
