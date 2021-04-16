@@ -11,6 +11,7 @@ class Example(Frame):
         self.h=h
         self.initUI()
     def _reset(self,foo=None):
+        self.destroy()
         self=Example(self.root,foo.width,foo.height)
     def initUI(self,foo=None):
         print(foo)
