@@ -35,7 +35,7 @@ class Example(Frame):
         self.master.bind('<Configure>',main)
 
 
-def main():
+def main(foo=None):
 
     root = Tk()
     ex = Example(root)
