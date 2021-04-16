@@ -23,7 +23,7 @@ class Example(Frame):
                     continue
                 temp,time=tuple(line.split(';'))
                 data.append(int(temp))
-                data.append(round(float(time.strip())%100)*100)
+                data.append(round(float(time.strip())%100)*5)
         print(*data)
         canvas.create_line(*data)
         canvas.pack(fill=BOTH, expand=1)
