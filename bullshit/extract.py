@@ -23,7 +23,7 @@ class Example(Frame):
                 temp,time=tuple(line.split(';'))
                 data.append(c)
 
-                data.append((self.master.winfo_height-int(temp)*5))
+                data.append((self.master.winfo_height()-int(temp)*5))
                 c+=5
         
         
