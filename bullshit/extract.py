@@ -36,7 +36,7 @@ class Example(Frame):
         self.master.title("Lines")
         self.pack(fill=BOTH, expand=1)
         self.canvas = Canvas(self)
-        draw(h)
+        self.draw(h)
 
 def main(foo=None):
 
