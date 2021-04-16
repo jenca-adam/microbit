@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 from flask import *
 app=Flask(__name__)
-@app.route('/'):
+@app.route('/')
 def index():
         data=[]
         c=0
