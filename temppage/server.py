@@ -13,9 +13,8 @@ def index():
                 temp,time=tuple(line.split(';'))
                 if not temp:
                     continue
-                data.append(c)
 
-                data.append((h-int(temp)*5)-h//2)
+                data.append([c,(h-int(temp)*5)-h//2)])
                 c+=1
         return render_template('index.html',data=data)
 app.run()
