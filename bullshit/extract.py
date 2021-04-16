@@ -9,6 +9,7 @@ class Example(Frame):
         self.root=root
         self.initUI()
     def _reset(self,foo=None):
+        self.destroy()
         self=Example(self.root)
     def initUI(self,foo=None):
         print(foo)
