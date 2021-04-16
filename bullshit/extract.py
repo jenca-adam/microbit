@@ -12,6 +12,7 @@ class Example(Frame):
         self.initUI()
     def _reset(self,foo=None):
         self.canvas.destroy()
+        self.initUI()
     def initUI(self,foo=None):
         print(foo)
         self.master.title("Lines")
@@ -41,7 +42,7 @@ def main(foo=None):
 
     root = Tk()
     ex = Example(root)
-    ex.after(100,ex.initUI)
+    ex.after(100,ex._reset)
     root.geometry("1920x1005")
     root.mainloop()
 
