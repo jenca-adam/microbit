@@ -23,7 +23,7 @@ class Example(Frame):
                 temp,time=tuple(line.split(';'))
                 data.append(c)
 
-                data.append(canvas.winfo_height()-int(temp)*5)
+                data.append(1005-int(temp)*5)
                 c+=10
         
         
