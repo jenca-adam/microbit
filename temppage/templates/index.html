@@ -5,11 +5,14 @@ Graf Teploty!!
 </title>
 </head>
 <body>
-<canvas id="myCanvas" width="1920" height="1005" style="border:1px solid #d3d3d3;">
+<canvas id="myCanvas">
 Your browser does not support the HTML canvas tag.</canvas>
 
 <script>
 var c = document.getElementById("myCanvas");
+c.style.width=window.innerWidth;
+c.style.height=window.innerHeight;
+
 var ctx = c.getContext("2d");
 ctx.moveTo(0,0);
 {% for i in data%}
