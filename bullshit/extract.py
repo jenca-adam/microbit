@@ -11,6 +11,7 @@ class Example(Frame):
     def _reset(self,foo=None):
         self.canvas.delete('all')
         self.draw(foo.height)
+        self.root.after(100,self._reset)
     def draw(self,h):
         data=[]
         c=0
@@ -45,6 +46,7 @@ def main(foo=None):
     root = Tk()
     ex = Example(root)
     root.geometry("1920x1005")
+    root.after(100,ex._reset)
     root.mainloop()
 
 
