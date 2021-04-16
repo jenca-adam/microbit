@@ -10,7 +10,7 @@ class Example(Frame):
         self.initUI()
     def _reset(self,foo=None):
         if not foo:
-            h=self.root.winfo_windowheight()
+            h=self.root.winfo_height()
         else:
             h=foo.height
         self.canvas.delete('all')
