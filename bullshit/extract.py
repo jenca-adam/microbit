@@ -15,7 +15,7 @@ class Example(Frame):
         r= Tk()
         r.geometry(f"{foo.width}x{foo.height}")
 
-        self=Example(r,foo.width,foo.height)
+        a=Example(r,foo.width,foo.height)
         r.mainloop()
     def initUI(self,foo=None):
         print(foo)
