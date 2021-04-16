@@ -37,7 +37,7 @@ class Example(Frame):
 def main():
 
     root = Tk()
-    ex = Example()
+    ex = Example(root)
     root.geometry("1920x1005")
     root.mainloop()
 
