@@ -25,9 +25,10 @@ class Example(Frame):
 
                 data.append(canvas.winfo_height()-int(temp)*round(canvas.winfo_height()/(1920/5)))
                 c+=10
-        print(*data)
+        
         if len(data)>(canvas.winfo_width()//100)*10:
             data=data[:-(canvas.winfo_width()//100)*10]
+        print(*data)
         canvas.create_line(*data,width=3)
         self.master.bind('<Key>',self.initUI)
         self.master.bind("<Configure>", self.initUI)
