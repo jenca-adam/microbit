@@ -12,7 +12,7 @@ class Example(Frame):
         self.initUI()
     def _reset(self,foo=None):
         a=Example(self.root,foo.width,foo.height)
-        self.destroy()
+        del self
     def initUI(self,foo=None):
         print(foo)
         self.master.title("Lines")
