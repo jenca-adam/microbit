@@ -4,8 +4,9 @@ from tkinter import Tk, Canvas, Frame, BOTH
 
 class Example(Frame):
 
-    def __init__(self):
+    def __init__(self,root):
         super().__init__()
+        self.r=root
         self.initUI()
 
     def initUI(self,foo=None):
@@ -13,7 +14,7 @@ class Example(Frame):
         self.master.title("Lines")
         self.pack(fill=BOTH, expand=1)
         canvas = Canvas(self)
-        print(canvas.winfo_height())
+        print(self.root.winfo_height())
 
         data=[]
         c=0
@@ -24,7 +25,7 @@ class Example(Frame):
                 temp,time=tuple(line.split(';'))
                 data.append(c)
 
-                data.append((canvas.winfo_height()-int(temp)*5))
+                data.append((self.root.winfo_height()-int(temp)*5))
                 c+=5
         
         
