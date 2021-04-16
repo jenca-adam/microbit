@@ -23,8 +23,9 @@ class Example(Frame):
                 if line=='\n':
                     continue
                 temp,time=tuple(line.split(';'))
-                data.append(int(temp))
                 data.append(c)
+
+                data.append(int(temp))
                 c+=10
         print(*data)
         canvas.create_line(*data)
