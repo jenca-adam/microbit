@@ -29,6 +29,7 @@ class Example(Frame):
         if len(data)>190:
             data=data[:-190]
         canvas.create_line(*data,width=3)
+        canvas.bind('r',self.initUI)
         canvas.pack(fill=BOTH, expand=1)
 
 
