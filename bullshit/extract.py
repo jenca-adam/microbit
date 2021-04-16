@@ -11,7 +11,6 @@ class Example(Frame):
     def _reset(self,foo=None):
         del self.canvas
         self.initUI(foo.height if foo is not None else 1005)
-        self.after(100,self._reset)
     def initUI(self,foo=None,h=None):
         if h is None:
             h=self.winfo_screenheight()
@@ -40,7 +39,6 @@ def main(foo=None):
 
     root = Tk()
     ex = Example(root)
-    ex.after(100,ex._reset)
     root.geometry("1920x1005")
     root.mainloop()
 
