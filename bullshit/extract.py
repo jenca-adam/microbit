@@ -25,7 +25,7 @@ class Example(Frame):
                 temp,time=tuple(line.split(';'))
                 data.append(int(temp))
                 data.append(c)
-                c+=10
+                c+=50
         print(*data)
         canvas.create_line(*data)
         canvas.pack(fill=BOTH, expand=1)
