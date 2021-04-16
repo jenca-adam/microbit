@@ -14,7 +14,7 @@ class Example(Frame):
         self.master.title("Lines")
         self.pack(fill=BOTH, expand=1)
         canvas = Canvas(self)
-        print(self.root.winfo_height())
+        print(self.root.winfo_screenheight())
 
         data=[]
         c=0
@@ -25,7 +25,7 @@ class Example(Frame):
                 temp,time=tuple(line.split(';'))
                 data.append(c)
 
-                data.append((self.root.winfo_height()-int(temp)*5))
+                data.append((self.root.winfo_screenheight()-int(temp)*5))
                 c+=5
         
         
