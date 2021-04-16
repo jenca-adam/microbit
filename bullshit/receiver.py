@@ -4,5 +4,5 @@ import time
 cache=""
 for i in Microbit():
     if i!=cache:
-        print(f'{i};{time.time()}\n',file=open("data.txt",'a'))
+        print(f'{i[:-1]};{time.time()}\n',file=open("data.txt",'a'))
         cache=i
