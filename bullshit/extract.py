@@ -29,6 +29,7 @@ class Example(Frame):
         
         canvas.create_line(*data,width=3)
         canvas.pack(fill=BOTH, expand=1)
+        self.master.bind('<Key>',lambda:self=Example())
 
 
 def main():
