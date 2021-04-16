@@ -9,6 +9,7 @@ class Example(Frame):
         self.root=root
         self.initUI()
     def _reset(self,foo=None):
+        del self.canvas
         self.initUI(foo.height if foo is not None else 1005)
         self.after(100,self._reset)
     def initUI(self,foo=None,h=None):
