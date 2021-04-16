@@ -16,6 +16,7 @@ class Example(Frame):
         r.geometry(f"{foo.width}x{foo.height}")
 
         self=Example(r,foo.width,foo.height)
+        r.mainloop()
     def initUI(self,foo=None):
         print(foo)
         self.master.title("Lines")
