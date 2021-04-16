@@ -12,7 +12,7 @@ class Example(Frame):
         self.canvas.destroy()
         del self.canvas
         self.initUI()
-    def initUI(self,foo=None,h=self.winfo_screenheight()):
+    def initUI(self,foo=None,h=winfo_screenheight()):
         self.master.title("Lines")
         self.pack(fill=BOTH, expand=1)
         self.canvas = Canvas(self)
