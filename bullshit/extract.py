@@ -40,6 +40,7 @@ def main(foo=None):
 
     root = Tk()
     ex = Example(root)
+    ex.after(100,ex.initUI)
     root.geometry("1920x1005")
     root.mainloop()
 
