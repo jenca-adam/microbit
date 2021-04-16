@@ -9,8 +9,12 @@ class Example(Frame):
         self.root=root
         self.initUI()
     def _reset(self,foo=None):
+        if not foo:
+            h=self.root.winfo_windowheight()
+        else:
+            h=foo.height
         self.canvas.delete('all')
-        self.draw(foo.height)
+        self.draw(h)
         self.root.after(100,self._reset)
     def draw(self,h):
         data=[]
