@@ -8,7 +8,7 @@ class Example(Frame):
         super().__init__()
         self.initUI()
 
-    def initUI(self,foo):
+    def initUI(self,foo=None):
         print(foo)
         self.master.title("Lines")
         self.pack(fill=BOTH, expand=1)
