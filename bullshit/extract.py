@@ -19,6 +19,8 @@ class Example(Frame):
         data=[]
         with open('data.txt') as f :
             for line in f:
+                if line=='\n':
+                    continue
                 temp,time=tuple(line.split(';'))
                 data.append(int(temp))
                 data.append(round(float(time.strip())-600000))
