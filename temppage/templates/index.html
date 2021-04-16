@@ -13,8 +13,9 @@ var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
 ctx.moveTo(0,0);
 {% for i in data%}
-
+ctx.lineTo({{i[0]}},{{i[1]}});
 {%endfor%}
+ctx.stroke();
 </script>
 </body>
 </html>
