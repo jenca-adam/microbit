@@ -6,7 +6,7 @@ class Example(Frame):
 
     def __init__(self,root):
         super().__init__()
-        self.r=root
+        self.root=root
         self.initUI()
 
     def initUI(self,foo=None):
