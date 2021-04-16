@@ -10,9 +10,7 @@ class Example(Frame):
         self.w=w
         self.h=h
         self.initUI()
-    def _reset(self,foo=None):
-        a=Example(self.root,foo.width,foo.height)
-        del self
+    def _reset(self,foo=None):pass 
     def initUI(self,foo=None):
         print(foo)
         self.master.title("Lines")
