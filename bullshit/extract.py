@@ -11,7 +11,6 @@ class Example(Frame):
         self.h=h
         self.initUI()
     def _reset(self,foo=None):
-        self.root.destroy()
         r= Tk()
         r.geometry(f"{foo.width}x{foo.height}")
 
