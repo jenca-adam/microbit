@@ -11,7 +11,7 @@ class Example(Frame):
     def _reset(self,foo=None):
         self.canvas.destroy()
         del self.canvas
-        self.initUI()
+        self.initUI(foo.height)
     def initUI(self,foo=None,h=None):
         if h is None:
             h=self.winfo_screenheight()
