@@ -5,6 +5,7 @@ app=Flask(__name__)
 def index():
         data=[]
         c=0
+        h=1005
         with open('data.txt') as f :
             for line in f:
                 if line=='\n':
