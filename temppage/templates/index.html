@@ -15,7 +15,7 @@ var c = document.getElementById("canvas");
 var c = document.getElementById("canvas");
 
 var ctx = c.getContext("2d");
-ctx.moveTo(0,0);
+ctx.moveTo({{data[0][0]}},{{data[0],[1]}});
 {% for i in data%}
 ctx.lineTo({{i[0]}},{{i[1]}});
 {%endfor%}
