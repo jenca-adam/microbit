@@ -24,7 +24,7 @@ class Example(Frame):
                 data.append(c)
 
                 data.append((h-int(temp))-h//2)
-                c+=1
+                c+=0.5
         
         
         self.canvas.create_line(*data,width=3)
