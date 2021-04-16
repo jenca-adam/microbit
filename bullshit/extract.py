@@ -12,7 +12,7 @@ class Example(Frame):
         print(foo)
         self.master.title("Lines")
         self.pack(fill=BOTH, expand=1)
-
+        print(self.master.winfo_height())
         canvas = Canvas(self)
         data=[]
         c=0
