@@ -10,12 +10,13 @@ class Example(Frame):
         self.w=w
         self.h=h
         self.initUI()
-    def _reset(self,foo=None):pass 
+    def _reset(self,foo=None):
+        self.canvas.destroy()
     def initUI(self,foo=None):
         print(foo)
         self.master.title("Lines")
         self.pack(fill=BOTH, expand=1)
-        canvas = Canvas(self)
+        self.canvas = Canvas(self)
         print(self.root.winfo_screenheight())
 
         data=[]
@@ -31,8 +32,8 @@ class Example(Frame):
                 c+=5
         
         
-        canvas.create_line(*data,width=3)
-        canvas.pack(fill=BOTH, expand=1)
+        self.canvas.create_line(*data,width=3)
+        self.canvas.pack(fill=BOTH, expand=1)
         self.master.bind('<Configure>',self._reset)
 
 
