@@ -23,13 +23,13 @@ class Example(Frame):
                 temp,time=tuple(line.split(';'))
                 data.append(c)
 
-                data.append((1005-int(temp)*5)-500)
+                data.append((self.master.winfo_height-int(temp)*5))
                 c+=5
         
         
         canvas.create_line(*data,width=3)
         canvas.pack(fill=BOTH, expand=1)
-        self.master.bind('<Key>',lambda:eval('self=Example()'))
+        self.master.bind('<Key>',lambda foo:eval('self=Example()'))
 
 
 def main():
