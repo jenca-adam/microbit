@@ -23,7 +23,7 @@ class Example(Frame):
                 temp,time=tuple(line.split(';'))
                 data.append(c)
 
-                data.append((1005-int(temp)*5)+500)
+                data.append((1005-int(temp)*5)+50)
                 c+=5
         
         
