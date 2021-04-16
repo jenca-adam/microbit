@@ -4,22 +4,18 @@ from tkinter import Tk, Canvas, Frame, BOTH
 
 class Example(Frame):
 
-    def __init__(self,root,w=1920,h=1005):
+    def __init__(self,root,):
         super().__init__()
         self.root=root
-        self.w=w
-        self.h=h
         self.initUI()
     def _reset(self,foo=None):
         self.canvas.destroy()
         del self.canvas
         self.initUI()
-    def initUI(self,foo=None):
-        print(foo)
+    def initUI(self,foo=None,h=self.winfo_screenheight()):
         self.master.title("Lines")
         self.pack(fill=BOTH, expand=1)
         self.canvas = Canvas(self)
-        print(self.root.winfo_screenheight())
 
         data=[]
         c=0
@@ -30,7 +26,7 @@ class Example(Frame):
                 temp,time=tuple(line.split(';'))
                 data.append(c)
 
-                data.append((self.h-int(temp)*5))
+                data.append((h-int(temp)*5))
                 c+=5
         
         
