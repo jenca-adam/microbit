@@ -14,8 +14,8 @@ def index():
                 if not temp:
                     continue
 
-                data.append([c,(h-int(temp)*5)-h//2])
-                c+=1
+                data.append([round(c),(h-int(temp)*5)-h//2,temp])
+                c+=0.25
         return render_template('index.html',data=data)
 app.run()
     

@@ -8,6 +8,8 @@ var c = document.getElementById("canvas");
 </script>
 </head>
 <body>
+<h1>Vonku je teraz {{data[-1][2]}} Stupnov C</h1>
+
 <canvas id="canvas" width="900px" height="500px">
 </canvas>
 
@@ -20,6 +22,10 @@ ctx.moveTo({{data[0][0]}},{{data[0][1]}});
 ctx.lineTo({{i[0]}},{{i[1]}});
 {%endfor%}
 ctx.stroke();
+function rfrsh(){
+    location.reload();
+    }
+setTimeout(rfrsh,100);
 </script>
 </body>
 </html>
