@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 import sys,os
-os.system('pip install art>/dev/null')
-os.system('pip install whitenoise-player>/dev/null')
 from whitenoise import play as wp
 from art import *
 import time
