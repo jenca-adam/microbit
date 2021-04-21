@@ -1,0 +1,19 @@
+[Desktop Entry]
+Comment[en_US]=
+Comment=
+Exec=konsole -e ~/recaptcha
+GenericName[en_US]=
+GenericName=
+Icon=~/rc.png
+MimeType=
+Name[en_US]=ReCaptcha
+Name=ReCaptcha
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=
