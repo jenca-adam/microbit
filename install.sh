@@ -13,7 +13,7 @@ pip install art
 echo "syncing db"
 sleep 1
 echo "Creating desktop file"
-curl $DSKSRC >rc.desktop
+curl $DSKSRC >Desktop/rc.desktop
 cd ~
 echo "Downloading icon"
 curl $IMGSRC >rc.png
